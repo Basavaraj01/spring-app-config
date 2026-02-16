@@ -9,8 +9,13 @@ eureka:
       
 okta:
   oauth2:
-    issuer: https://trial-4927233.okta.com/oauth2/default
+    issuer: https://dev-15585796.okta.com/oauth2/default
     audience: api://default
 spring:
   zipkin:
-    baseUrl: http://zipkin-svc:9411
+    baseUrl: http://localhost:9411
+  security:
+  oauth2:
+    resourceserver:
+      jwt:
+        issuer-uri: https://dev-4xe0s5lwnm84qxz5.us.auth0.com/
